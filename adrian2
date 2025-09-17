@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-sky src="https://codehs.com/uploads/72d03fdcf55b3e82d9dfc6b911d2280d"></a-sky>
+        
+        
+        
+                    <a-plane
+            position="0 0 -4" rotation="-90 0 0" width="100" height="100" 
+            src="https://codehs.com/uploads/0f01fd8670513638fada93a48a27aad2">
+        </a-plane>
+        
+        
+        <a-sphere
+            position="2 1 -5"
+            depth="2"
+            height="2"
+            width="2"
+            animation="
+                property: rotation;
+                from: 0 0 0;
+                to: 0 4500 0;
+                dur: 1100;
+                easing: linear;
+                loop: false;
+                startEvents: click;
+            "
+            
+                animation__2="
+                property: position;
+                from: 2 1 -5;
+                to: -5 2 -10;
+                loop:false;
+                startEvents: click;
+               "
+            
+            src="https://codehs.com/uploads/625a01212bc681ca1dfff959810a84e4">
+        </a-sphere>
+        
+        <a-box position="-2 1 -5"
+               depth="1.5" 
+               height="1.5" 
+               width="1.5"
+               animation="property: rotation;
+                from: 0 0 0;
+                to: 360 0 0;
+                dur: 1100;
+                easing: linear;
+                loop: false;
+                startEvents: click;"
+                
+                    animation__2="
+                property: position;
+                from: -2 1 -5;
+                to: 5 2 -10;
+                loop:false;
+                startEvents: click;
+               "
+
+
+
+
+
+          src="https://codehs.com/uploads/625a01212bc681ca1dfff959810a84e4"
+        >
+            
+            
+            
+        </a-box>
+
+        
+        <a-camera>
+        <a-cursor fuse="true" fuse-timeout="1500" > </a-cursor>
+        </a-camera>
+        
+        </a-scene>
+    </body>
+</html>
